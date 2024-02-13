@@ -1,0 +1,12 @@
+<!-- -->
+
+{% extends 'base.html' %}
+
+{% block contenido %}
+    <h2>Buscar en el Blog</h2>
+    <form method="get" action="{% url 'buscar' %}">
+        <input type="text" name="q" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+    </form>
+    <!-- Muestra los resultados de la búsqueda aquí -->
+{% endblock %}
